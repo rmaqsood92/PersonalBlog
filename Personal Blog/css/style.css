@@ -1,0 +1,70 @@
+.container {
+    /* Step 1: Set display to grid */
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 0.5fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    border: 2px solid yellow;
+}
+
+.logobar {
+    grid-area: 1 / 1 / 1 / 6;
+    background: #c0c0c0;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar {
+    grid-area: 2 / 1 / 2 / 6;
+    display: flex;
+    justify-content: flex-end;
+    flex-flow: row wrap;
+    border: 1px solid black;
+}
+
+.navlist {
+    display: block;
+    text-align: center;
+    padding: 1em;
+    margin-right: 5em;
+    border: 1px solid black
+}
+
+.bloqs {
+    width: auto;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    align-items: center;
+    border: 1px solid black;
+}
+
+.bloqbox {
+    display: block;
+    text-align: center;
+    margin: 3em;
+    padding: 5em;
+    border: 1px solid black
+}
+
+.ftr {
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    border: 1px solid black;
+}
+
+.ftrlink {
+    display: block;
+    text-align: center;
+    margin: 3em;
+    border: 1px solid black
+}
