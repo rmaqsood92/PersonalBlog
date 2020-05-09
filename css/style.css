@@ -18,14 +18,17 @@ body {
 
 .logobar {
     grid-area: 1 / 1 / 1 / 7;
-    height: 50%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .logo {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: block;
+    height:25%;
+    width:25%;
 }
+
 
 .navbar {
     grid-area: 1 / 1 / 2 / 7;
@@ -35,6 +38,7 @@ body {
     justify-content: center;
     flex-flow: row wrap;
 }
+
 
 .navlist {
     display: block;
@@ -52,6 +56,7 @@ body {
     border: 2px solid white;
     border-radius: 25px;
 }
+
 
 .bloqs {
     grid-area: 2 /1 /6 /7;
@@ -114,4 +119,63 @@ body {
     text-align: center;
     margin-right: 20em;
     margin-left: -10em;
+}
+
+@media (max-width:425px){
+    .container{
+    display: grid;
+    height: 500vh;
+    grid-template-columns: repeat(, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    border: 1px solid yellow;
+    background-color: rgba(255, 255, 255, 0.021);
+    background-blend-mode: lighten;
+    }
+    .logo{
+        object-fit:contain;
+        height:fit-content;
+        width:300px;
+    }
+
+    .navbar{
+        display:none;
+
+    }
+
+    .bloqtitle{
+        font-size:12px;
+        font-family:sans-serif;
+        margin-bottom:5em;
+    }
+
+    .bloqs{
+    
+    }
+
+    .bloqbox{
+        padding:8em;
+        margin-top:4em;
+    }
+
+    .ftr{
+        flex-flow:column;
+    }
+
+    .cpright{
+        margin:auto;
+    }
+
+    .ftrlink{
+        margin:auto;
+    }
+
+
+    .icon{
+        
+    }
+
+
+
 }
