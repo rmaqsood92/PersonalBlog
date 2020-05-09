@@ -71,11 +71,12 @@ body {
 }
 
 .bloqbox {
-    background-image: url('./assets/Bloqs/1.png');
     display: block;
     text-align: center;
+    background-attachment: inherit;
+    background-size: contain;
     margin: 3em;
-    padding: 8em;
+    padding: 11em;
     border: 1px solid black;
     border-radius: 5px;
 }
