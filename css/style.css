@@ -89,21 +89,41 @@ body {
     display: flex;
     justify-content: center;
     flex-flow: row wrap;
-    border: 1px solid black;
 }
 
 .ftrlink {
     display: block;
     text-align: center;
-    margin: 3em;
-    border: 1px solid black
+    margin: 2em;
 }
 
-.ftrlink1 {
+.icon {
+    margin-right: -2em;
+
+}
+
+.fb {
+
+}
+
+.sn {
+
+}
+
+ln {
+
+}
+
+.subscribe {
+    margin-left: 20em;
+}
+
+.cpright {
+    grid-area: 6/1/7/2;
+    color: white;
+    text-decoration: none;
     display: block;
     text-align: center;
-    margin-right: 50em;
-    margin-top: 3em;
-    margin-bottom: 3em;
-    border: 1px solid black;
+    margin-right: 20em;
+    margin-left:-10em;
 }
