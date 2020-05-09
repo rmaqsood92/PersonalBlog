@@ -95,23 +95,11 @@ body {
     display: block;
     text-align: center;
     margin: 2em;
+    color: white;
 }
 
 .icon {
-    margin-right: -2em;
-
-}
-
-.fb {
-
-}
-
-.sn {
-
-}
-
-ln {
-
+    margin-right: -1em;
 }
 
 .subscribe {
@@ -125,5 +113,5 @@ ln {
     display: block;
     text-align: center;
     margin-right: 20em;
-    margin-left:-10em;
+    margin-left: -10em;
 }
