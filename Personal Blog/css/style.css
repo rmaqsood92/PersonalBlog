@@ -1,16 +1,24 @@
+body {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
 .container {
-    /* Step 1: Set display to grid */
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(2, 0.5fr);
+    height: 100vh;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(6, 1fr);
     grid-column-gap: 0px;
     grid-row-gap: 0px;
-    border: 2px solid yellow;
+    border: 1px solid yellow;
+    background-color: rgba(255, 255, 255, 0.021);
+    background-blend-mode: lighten;
 }
 
 .logobar {
-    grid-area: 1 / 1 / 1 / 6;
-    background: #c0c0c0;
+    grid-area: 1 / 1 / 1 / 7;
+    height: 50%;
 }
 
 .logo {
@@ -20,24 +28,35 @@
 }
 
 .navbar {
-    grid-area: 2 / 1 / 2 / 6;
+    grid-area: 1 / 1 / 2 / 7;
+    height: 25%;
+    margin-top: 5.5%;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     flex-flow: row wrap;
-    border: 1px solid black;
 }
 
 .navlist {
     display: block;
     text-align: center;
-    padding: 1em;
-    margin-right: 5em;
-    border: 1px solid black
+    text-transform: uppercase;
+    color: white;
+    text-decoration: none;
+    text-decoration-color: none;
+    font-family: sans-serif;
+    font-size: unset;
+    padding-top: 0.5em;
+    padding-right: 2em;
+    padding-left: 2em;
+    margin-right: 3em;
+    border: 2px solid white;
+    border-radius: 25px;
 }
 
 .bloqs {
+    grid-area: 2 /1 /6 /7;
     width: auto;
-    height: 60vh;
+    height: 111%;
     display: flex;
     justify-content: center;
     flex-flow: row wrap;
@@ -45,17 +64,26 @@
     border: 1px solid black;
 }
 
+.bloqtitle {
+    display: block;
+    text-align: center;
+    grid-area: 2/1/2/7;
+}
+
 .bloqbox {
     display: block;
     text-align: center;
     margin: 3em;
-    padding: 5em;
-    border: 1px solid black
+    padding: 8em;
+    border: 1px solid black;
+    border-radius: 5px;
 }
 
 .ftr {
+    grid-area: 6 /1 /7 /7;
     width: auto;
     height: auto;
+    margin-top: 4%;
     display: flex;
     justify-content: center;
     flex-flow: row wrap;
@@ -67,4 +95,13 @@
     text-align: center;
     margin: 3em;
     border: 1px solid black
+}
+
+.ftrlink1 {
+    display: block;
+    text-align: center;
+    margin-right: 50em;
+    margin-top: 3em;
+    margin-bottom: 3em;
+    border: 1px solid black;
 }
