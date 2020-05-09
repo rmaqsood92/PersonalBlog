@@ -71,6 +71,7 @@ body {
 }
 
 .bloqbox {
+    background-image: url('./assets/Bloqs/1.png');
     display: block;
     text-align: center;
     margin: 3em;
