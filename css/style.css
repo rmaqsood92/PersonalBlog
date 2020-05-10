@@ -18,17 +18,16 @@ body {
 
 .logobar {
     grid-area: 1 / 1 / 1 / 7;
-    display:flex;
+    display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .logo {
     display: block;
-    height:25%;
-    width:25%;
+    height: fit-content;
+    width: fit-content;
 }
-
 
 .navbar {
     grid-area: 1 / 1 / 2 / 7;
@@ -38,7 +37,6 @@ body {
     justify-content: center;
     flex-flow: row wrap;
 }
-
 
 .navlist {
     display: block;
@@ -57,7 +55,6 @@ body {
     border-radius: 25px;
 }
 
-
 .bloqs {
     grid-area: 2 /1 /6 /7;
     width: auto;
@@ -73,6 +70,11 @@ body {
     display: block;
     text-align: center;
     grid-area: 2/1/2/7;
+}
+
+.bloqs{
+    grid-area: 2/1/7/7;
+    height:100%;
 }
 
 .bloqbox {
@@ -99,8 +101,9 @@ body {
 .ftrlink {
     display: block;
     text-align: center;
-    margin: 2em;
+    margin-top: 1em;
     color: white;
+    margin-bottom: 3em;
 }
 
 .icon {
@@ -121,61 +124,68 @@ body {
     margin-left: -10em;
 }
 
-@media (max-width:425px){
-    .container{
-    display: grid;
-    height: 500vh;
-    grid-template-columns: repeat(, 1fr);
-    grid-template-rows: repeat(6, 1fr);
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-    border: 1px solid yellow;
-    background-color: rgba(255, 255, 255, 0.021);
-    background-blend-mode: lighten;
+@media (max-width:425px) {
+    .container {
+        display: grid;
+        height: fit-content;
+        width:fit-content;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        border: 1px solid yellow;
+        background-color: rgba(255, 255, 255, 0.021);
+        background-blend-mode: lighten;
     }
-    .logo{
-        object-fit:contain;
+
+    .logobar{
+        width:fit-content;
+        display:flex
+        justify-content:center;
+        align-items:center;
+    }
+
+   
+    .logo {
         height:fit-content;
-        width:300px;
+        width:fit-content;
+    }
+    .navbar {
+        display: none;
+    }
+    .bloqtitle {
+        font-size: 12px;
+        font-family: sans-serif;
+        margin-bottom: 5em;
+    }
+    .bloqbox {
+        padding: 8em;
+        margin-top: 4em;
+    }
+    .ftr {
+        flex-flow: column-reverse;
+        grid-area: 7/1/7/7;
+    }
+    .cpright {
+        margin: inherit;
+    }
+    .ftrlink {
+        display:flex;
+        justify-content:center;
+    }
+    .icon {
+        flex-flow:row;
+        margin:0.5em;
+        margin-bottom:-3em;
+        height: 24px;
+        width: 24px;
+        object-fit:contain;
     }
 
-    .navbar{
-        display:none;
-
+    .subscribe{
+        margin-left: 0em;
+        margin-bottom: 1em;
     }
 
-    .bloqtitle{
-        font-size:12px;
-        font-family:sans-serif;
-        margin-bottom:5em;
-    }
-
-    .bloqs{
-    
-    }
-
-    .bloqbox{
-        padding:8em;
-        margin-top:4em;
-    }
-
-    .ftr{
-        flex-flow:column;
-    }
-
-    .cpright{
-        margin:auto;
-    }
-
-    .ftrlink{
-        margin:auto;
-    }
-
-
-    .icon{
-        
-    }
-
-
-
+a.ftrlink.subscribe {}
 }
