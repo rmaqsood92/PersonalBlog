@@ -1,4 +1,6 @@
-                                body {
+                            @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap');
+
+                            body {
                                 background-repeat: no-repeat;
                                 background-attachment: fixed;
                                 background-size: cover;
@@ -62,13 +64,13 @@
                                 justify-content: center;
                                 flex-flow: row wrap;
                                 align-items: center;
-                                border: 1px solid black;
                             }
                             
                             .bloqtitle {
                                 display: block;
                                 text-align: center;
                                 grid-area: 2/1/2/7;
+                              
                             }
                             
                             .bloqs {
@@ -83,7 +85,6 @@
                                 background-size: contain;
                                 margin: 3em;
                                 padding: 11em;
-                                border: 1px solid black;
                                 border-radius: 5px;
                             }
                             
@@ -111,6 +112,14 @@
                             
                             .subscribe {
                                 margin-left: 20em;
+                                background-color:black;
+                                opacity:0.85;
+                                border-radius:5em;
+                                padding: 15px 32px;
+                                display: inline-block;
+                                text-decoration:none;
+                                box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+                                font-family:'Comfortaa',cursive;
                             }
                             
                             .cpright {
@@ -121,6 +130,9 @@
                                 text-align: center;
                                 margin-right: 20em;
                                 margin-left: -10em;
+                                font-family:'Comfortaa',cursive;
+                                font-size:12px;
+                                border-top:1px solid white ;
                             }
                             
                             @media (max-width:425px) {
@@ -130,7 +142,6 @@
                                     width: fit-content;
                                 }
                                 .logobar {
-                                    width: fit-content;
                                     display: flex;
                                     justify-content: center;
                                     align-items: center;
@@ -138,18 +149,19 @@
                                 .logo {
                                     height: fit-content;
                                     width: fit-content;
+                                  
                                 }
                                 .navbar {
                                     display: none;
                                 }
                                 .bloqtitle {
-                                    font-size: 12px;
-                                    font-family: sans-serif;
-                                    margin-bottom: 5em;
+                                    font-size: 28px;
+                                    font-family: 'Comfortaa', cursive ;
+                                    margin-bottom: 4em;
                                 }
                                 .bloqbox {
-                                    padding: 8em;
-                                    margin-top: 4em;
+                                    margin:5em;
+                                    grid-area: 3/1/7/7;
                                 }
                                 .ftr {
                                     flex-flow: column-reverse;
@@ -157,6 +169,7 @@
                                 }
                                 .cpright {
                                     margin: inherit;
+                                    padding-top:1em;
                                 }
                                 .ftrlink {
                                     display: flex;
@@ -171,6 +184,7 @@
                                     object-fit: contain;
                                 }
                                 .subscribe {
-                                    margin-left: 0em;
+                                    margin-left: 5em;
+                                    margin-right: 5em;
                                     margin-bottom: 1em;
                                 }
