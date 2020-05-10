@@ -17,7 +17,7 @@
                             }
                             
                             .logobar {
-                                grid-area: 1 / 1 / 1 / 7;
+                                grid-area: 1 / 1 / 2 / 7;
                                 display: flex;
                                 justify-content: center;
                                 align-items: center;
@@ -135,17 +135,17 @@
                             @media(max-width:768px) {
                                 .container {
                                     display: grid;
+                                    grid-template-rows: repeat(4, 0.2fr);
                                     height: fit-content;
                                     width: fit-content;
 
                                 }
                                 .logobar {
-                                    grid-area: 1/1/1/7;
+                                    grid-area: 1/1/2/7;
                                     display: flex;
                                     justify-content: center;
-                                    align-items: center;
-                                    overflow: initial;
-                                    grid-template-columns:min-content;
+                                    align-items: center; 
+                                    
                                 }
                                 .logo {
                                     height: fit-content;
@@ -158,23 +158,21 @@
                                 }
                                 .bloqtitle {
                                     grid-area: 2/1/2/7;
-                                    font-size: 28px;
+                                    font-size: 16px;
                                     font-family: 'Comfortaa', cursive;
-                                    border:solid white;
+                                    color: white;
+                                    height:fit-content;
                                     overflow:auto;
-                                    grid-template-columns:min-content;
-
                                 }
                                 .bloqs{
-                                   grid-area: 3/1/5/7;
-                                   border: solid
+                                   grid-area: 3/1/4/7;
                                 }
                                 .bloqbox {
-                                    margin: 5em;
+                                    margin: 1em;
                                 }
                                 .ftr {
                                     flex-flow: column-reverse;
-                                    grid-area: 7/1/7/7;
+                                    grid-area: 4/1/4/7;
                                 }
                                 .cpright {
                                     margin: inherit;
@@ -183,6 +181,7 @@
                                 .ftrlink {
                                     display: flex;
                                     justify-content: center;
+                                    margin:2em;
                                 }
                                 .icon {
                                     flex-flow: row;
@@ -195,7 +194,6 @@
                                 .subscribe {
                                     margin-left: 5em;
                                     margin-right: 5em;
-                                    margin-bottom: 1em;
                                 }
                             }
                             @media(min-width:700px) and (max-width:1024px) {
@@ -236,6 +234,7 @@
                                 .ftrlink {
                                     display: flex;
                                     justify-content: center;
+
                                 }
                                 .icon {
                                     flex-flow: row;
