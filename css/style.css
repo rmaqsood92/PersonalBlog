@@ -92,7 +92,6 @@
                             
                             .ftrlink {
                                 display: block;
-                                text-align: center;
                                 align-items:center;
                                 margin-top: 7em;
                                 color: white;
@@ -171,29 +170,35 @@
                                     margin: 1em;
                                 }
                                 .ftr {
-                                    flex-flow: column-reverse;
+                                    flex-flow: column;
                                     grid-area: 4/1/4/7;
                                 }
                                 .cpright {
-                                    margin: inherit;
                                     padding-top: 1em;
                                 }
                                 .ftrlink {
                                     display: flex;
                                     justify-content: center;
                                     margin:2em;
+                                    height:24px;
                                 }
                                 .icon {
                                     flex-flow: row;
                                     margin: 0.5em;
-                                    margin-bottom: -3em;
                                     height: 24px;
                                     width: 24px;
-                                    object-fit: contain;
+                                    
+
+                                }
+                                .follow{
+                                       text-align:center;
+                                       color:white;
+                                       font-family:'Comfortaa',cursive;
+                                       font-size:16px;                
                                 }
                                 .subscribe {
-                                    margin-left: 5em;
-                                    margin-right: 5em;
+                                    margin-left: auto;
+                                    margin-right: auto;
                                 }
                             }
                             @media(min-width:700px) and (max-width:1024px) {
