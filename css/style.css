@@ -1,134 +1,12 @@
-                    body {
-                    background-repeat: no-repeat;
-                    background-attachment: fixed;
-                    background-size: cover;
-                }
-                
-                .container {
-                    display: grid;
-                    height: 100vh;
-                    grid-template-columns: repeat(6, 1fr);
-                    grid-template-rows: repeat(6, 1fr);
-                    grid-column-gap: 0px;
-                    grid-row-gap: 0px;
-                    border: 1px solid yellow;
-                    background-color: rgba(255, 255, 255, 0.021);
-                    background-blend-mode: lighten;
-                }
-                
-                .logobar {
-                    grid-area: 1 / 1 / 1 / 7;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                }
-                
-                .logo {
-                    display: block;
-                    height: fit-content;
-                    width: fit-content;
-                }
-                
-                .navbar {
-                    grid-area: 1 / 1 / 2 / 7;
-                    height: 25%;
-                    margin-top: 5.5%;
-                    display: flex;
-                    justify-content: center;
-                    flex-flow: row wrap;
-                }
-                
-                .navlist {
-                    display: block;
-                    text-align: center;
-                    text-transform: uppercase;
-                    color: white;
-                    text-decoration: none;
-                    text-decoration-color: none;
-                    font-family: sans-serif;
-                    font-size: unset;
-                    padding-top: 0.5em;
-                    padding-right: 2em;
-                    padding-left: 2em;
-                    margin-right: 3em;
-                    border: 2px solid white;
-                    border-radius: 25px;
-                }
-                
-                .bloqs {
-                    grid-area: 2 /1 /6 /7;
-                    width: auto;
-                    height: 111%;
-                    display: flex;
-                    justify-content: center;
-                    flex-flow: row wrap;
-                    align-items: center;
-                    border: 1px solid black;
-                }
-                
-                .bloqtitle {
-                    display: block;
-                    text-align: center;
-                    grid-area: 2/1/2/7;
-                }
-                
-                .bloqs {
-                    grid-area: 2/1/7/7;
-                    height: 100%;
-                }
-                
-                .bloqbox {
-                    display: block;
-                    text-align: center;
-                    background-attachment: inherit;
-                    background-size: contain;
-                    margin: 3em;
-                    padding: 11em;
-                    border: 1px solid black;
-                    border-radius: 5px;
-                }
-                
-                .ftr {
-                    grid-area: 6 /1 /7 /7;
-                    width: auto;
-                    height: auto;
-                    margin-top: 4%;
-                    display: flex;
-                    justify-content: center;
-                    flex-flow: row wrap;
-                }
-                
-                .ftrlink {
-                    display: block;
-                    text-align: center;
-                    margin-top: 1em;
-                    color: white;
-                    margin-bottom: 3em;
-                }
-                
-                .icon {
-                    margin-right: -1em;
-                }
-                
-                .subscribe {
-                    margin-left: 20em;
-                }
-                
-                .cpright {
-                    grid-area: 6/1/7/2;
-                    color: white;
-                    text-decoration: none;
-                    display: block;
-                    text-align: center;
-                    margin-right: 20em;
-                    margin-left: -10em;
-                }
-                
-                @media (max-width:425px) {
+                        body {
+                        background-repeat: no-repeat;
+                        background-attachment: fixed;
+                        background-size: cover;
+                    }
+                    
                     .container {
                         display: grid;
-                        height: fit-content;
-                        width: fit-content;
+                        height: 100vh;
                         grid-template-columns: repeat(6, 1fr);
                         grid-template-rows: repeat(6, 1fr);
                         grid-column-gap: 0px;
@@ -136,48 +14,169 @@
                         background-color: rgba(255, 255, 255, 0.021);
                         background-blend-mode: lighten;
                     }
+                    
                     .logobar {
-                        width: fit-content;
+                        grid-area: 1 / 1 / 1 / 7;
                         display: flex;
                         justify-content: center;
                         align-items: center;
                     }
+                    
                     .logo {
+                        display: block;
                         height: fit-content;
                         width: fit-content;
                     }
+                    
                     .navbar {
-                        display: none;
-                    }
-                    .bloqtitle {
-                        font-size: 12px;
-                        font-family: sans-serif;
-                        margin-bottom: 5em;
-                    }
-                    .bloqbox {
-                        padding: 8em;
-                        margin-top: 4em;
-                    }
-                    .ftr {
-                        flex-flow: column-reverse;
-                        grid-area: 7/1/7/7;
-                    }
-                    .cpright {
-                        margin: inherit;
-                    }
-                    .ftrlink {
+                        grid-area: 1 / 1 / 2 / 7;
+                        height: 25%;
+                        margin-top: 5.5%;
                         display: flex;
                         justify-content: center;
+                        flex-flow: row wrap;
                     }
+                    
+                    .navlist {
+                        display: block;
+                        text-align: center;
+                        text-transform: uppercase;
+                        color: white;
+                        text-decoration: none;
+                        text-decoration-color: none;
+                        font-family: sans-serif;
+                        font-size: unset;
+                        padding-top: 0.5em;
+                        padding-right: 2em;
+                        padding-left: 2em;
+                        margin-right: 3em;
+                        border: 2px solid white;
+                        border-radius: 25px;
+                    }
+                    
+                    .bloqs {
+                        grid-area: 2 /1 /6 /7;
+                        width: auto;
+                        height: 111%;
+                        display: flex;
+                        justify-content: center;
+                        flex-flow: row wrap;
+                        align-items: center;
+                        border: 1px solid black;
+                    }
+                    
+                    .bloqtitle {
+                        display: block;
+                        text-align: center;
+                        grid-area: 2/1/2/7;
+                    }
+                    
+                    .bloqs {
+                        grid-area: 2/1/7/7;
+                        height: 100%;
+                    }
+                    
+                    .bloqbox {
+                        display: block;
+                        text-align: center;
+                        background-attachment: inherit;
+                        background-size: contain;
+                        margin: 3em;
+                        padding: 11em;
+                        border: 1px solid black;
+                        border-radius: 5px;
+                    }
+                    
+                    .ftr {
+                        grid-area: 6 /1 /7 /7;
+                        width: auto;
+                        height: auto;
+                        margin-top: 4%;
+                        display: flex;
+                        justify-content: center;
+                        flex-flow: row wrap;
+                    }
+                    
+                    .ftrlink {
+                        display: block;
+                        text-align: center;
+                        margin-top: 1em;
+                        color: white;
+                        margin-bottom: 3em;
+                    }
+                    
                     .icon {
-                        flex-flow: row;
-                        margin: 0.5em;
-                        margin-bottom: -3em;
-                        height: 24px;
-                        width: 24px;
-                        object-fit: contain;
+                        margin-right: -1em;
                     }
+                    
                     .subscribe {
-                        margin-left: 0em;
-                        margin-bottom: 1em;
+                        margin-left: 20em;
                     }
+                    
+                    .cpright {
+                        grid-area: 6/1/7/2;
+                        color: white;
+                        text-decoration: none;
+                        display: block;
+                        text-align: center;
+                        margin-right: 20em;
+                        margin-left: -10em;
+                    }
+                    
+                    @media (max-width:425px) {
+                        .container {
+                            display: grid;
+                            height: fit-content;
+                            width: fit-content;
+                            grid-template-columns: repeat(6, 1fr);
+                            grid-template-rows: repeat(6, 1fr);
+                            grid-column-gap: 0px;
+                            grid-row-gap: 0px;
+                            background-color: rgba(255, 255, 255, 0.021);
+                            background-blend-mode: lighten;
+                        }
+                        .logobar {
+                            width: fit-content;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                        }
+                        .logo {
+                            height: fit-content;
+                            width: fit-content;
+                        }
+                        .navbar {
+                            display: none;
+                        }
+                        .bloqtitle {
+                            font-size: 12px;
+                            font-family: sans-serif;
+                            margin-bottom: 5em;
+                        }
+                        .bloqbox {
+                            padding: 8em;
+                            margin-top: 4em;
+                        }
+                        .ftr {
+                            flex-flow: column-reverse;
+                            grid-area: 7/1/7/7;
+                        }
+                        .cpright {
+                            margin: inherit;
+                        }
+                        .ftrlink {
+                            display: flex;
+                            justify-content: center;
+                        }
+                        .icon {
+                            flex-flow: row;
+                            margin: 0.5em;
+                            margin-bottom: -3em;
+                            height: 24px;
+                            width: 24px;
+                            object-fit: contain;
+                        }
+                        .subscribe {
+                            margin-left: 0em;
+                            margin-bottom: 1em;
+                        }
